@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sort-3mf-plates"
+version = "1.0.0"
+description = "Sort the plates of a Bambu Studio .3mf project alphabetically by plate name."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [{ name = "Shane Brinkman-Davis Delamore" }]
+keywords = ["3mf", "bambu", "bambu-studio", "3d-printing"]
+
+[project.urls]
+Homepage = "https://github.com/shanebdavis/sort-3mf-plates"
+
+[project.scripts]
+sort-3mf-plates = "sort_3mf_plates:main"
+
+[tool.setuptools]
+py-modules = ["sort_3mf_plates"]
